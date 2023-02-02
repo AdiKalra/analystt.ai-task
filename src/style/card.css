@@ -81,3 +81,6 @@ span{
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
+.info{
+	margin-bottom: 10px;
+}

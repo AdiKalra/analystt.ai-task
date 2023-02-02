@@ -1,0 +1,22 @@
+.pagination{
+	margin: 30px auto;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.pagination > div{
+	text-align: center;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 24px;
+	padding: 3px;
+
+}
+.pagination > div:hover{
+	cursor: pointer;
+}
+.pg{
+	background-color: rgb(12, 100, 223);
+	color: #fff;
+}

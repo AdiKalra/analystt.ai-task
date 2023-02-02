@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+	font-size: 18px;
+}
+.card{
+	width: 90%;
+	margin: 10px auto;
+	box-shadow: 1px 1px 5px rgb(0,0,0,0.1),-1px -1px 5px rgb(0,0,0,0.1);
+	background-color: #fff;
+	max-width: 90%;
+	border-radius: 10px;
+}
+/* .card:hover{
+	background-color: rgb(211, 226, 255);
+} */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.center{
+	justify-content: center;
+}
+.bold{
+	font-weight: 700;
+}
+.card--container{
+	padding: 10px 30px;
+}
+.basic-info{
+	max-height: fit-content;
+}
+.detailed-info{
+	display: none;
+}
+.basic-info > div{
+	width: 120px;
+	max-width: 120px;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.toggle-button{
+	margin: 5px 10px
+}
+.toggle-button > button{
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	background-color: rgb(12, 100, 223);
+	padding: 5px 10px;
+	border-radius: 12px;
+	border: 0;
+}
+.toggle-button > button:hover{
+	background-color: rgb(58, 127, 223)
+}
+span{
+	margin: 2px 0;
+}
+.display{
+	display: block;
+}
+
+.detailed-info{
+	max-width: 90%;
+	width: 90%;
+	padding: 20px;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgb(0,0,0,0.09),-1px -1px 5px rgb(0,0,0,0.09);
+}
+.detail--container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}

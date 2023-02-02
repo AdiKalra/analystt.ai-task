@@ -10,6 +10,7 @@ export default function PageNavigation(props) {
   }
   return (
     <div className="pagination">
+
       <div
         className="prev"
         onClick={decrement}
@@ -21,10 +22,13 @@ export default function PageNavigation(props) {
       >
         <i className="fa-solid fa-angle-left"></i>
       </div>
+
       <div className="pg-1" onClick={decrement}>
         {props.currentPage === 1 ? "" : props.currentPage - 1}
       </div>
+
       <div className="pg">{props.currentPage}</div>
+
       <div className="pg+1" onClick={increment}>
         {props.currentPage === props.totalPages ? "" : props.currentPage + 1}
       </div>
@@ -32,9 +36,9 @@ export default function PageNavigation(props) {
         className="next"
         onClick={increment}
         style={
-          props.currentPage === props.totalPages
-            ? { visibility: "hidden" }
-            : { visibility: "visible" }
+          props.currentPage !== props.totalPages
+            ? { visibility: "visible" }
+            : { visibility: "hidden" }
         }
       >
         <i className="fa-solid fa-angle-right"></i>

@@ -5,12 +5,10 @@ import PageNavigation from "./components/PageNavigation";
 
 function App() {
   const [user, setUser] = useState([]);
-  // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  // const [userPerPage, setUserPerPage] = useState(3);
-  const [totalPages, setTotalPages] = useState();
+  const [userPerPage, setUserPerPage] = useState(3);
+  const [totalPages, setTotalPages] = useState(0);
   const [detailId, setDetailId] = useState(0);
-  const userPerPage = 3;
   const fetchData = async () => {
     return await fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
